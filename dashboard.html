@@ -63,9 +63,7 @@
     text-transform: uppercase;
   }
 
-  .nav-right {
-    display: flex; align-items: center; gap: 16px;
-  }
+  .nav-right { display: flex; align-items: center; gap: 16px; }
 
   .user-pill {
     background: var(--card);
@@ -76,7 +74,6 @@
     color: var(--muted);
     display: flex; align-items: center; gap: 8px;
   }
-
   .user-pill::before {
     content: '';
     width: 8px; height: 8px;
@@ -110,16 +107,8 @@
     letter-spacing: -1px;
     color: var(--text);
   }
-  .hero h1 em {
-    font-style: normal;
-    color: var(--accent);
-  }
-  .hero p {
-    color: var(--muted);
-    font-size: 15px;
-    margin-top: 12px;
-    font-weight: 300;
-  }
+  .hero h1 em { font-style: normal; color: var(--accent); }
+  .hero p { color: var(--muted); font-size: 15px; margin-top: 12px; font-weight: 300; }
 
   .add-wrapper {
     max-width: 580px;
@@ -136,7 +125,6 @@
     position: relative;
     overflow: hidden;
   }
-
   .add-box::before {
     content: '';
     position: absolute;
@@ -144,7 +132,6 @@
     height: 3px;
     background: linear-gradient(90deg, var(--accent), var(--accent2));
   }
-
   .add-box h3 {
     font-family: 'Playfair Display', serif;
     font-size: 18px;
@@ -164,12 +151,7 @@
     text-transform: uppercase;
   }
 
-  .field-group {
-    display: flex;
-    flex-direction: column;
-    gap: 12px;
-    margin-bottom: 16px;
-  }
+  .field-group { display: flex; flex-direction: column; gap: 12px; margin-bottom: 16px; }
 
   .field-group input,
   .field-group textarea {
@@ -201,16 +183,11 @@
     font-weight: 600;
     cursor: pointer;
     transition: all 0.2s;
-    letter-spacing: 0.3px;
   }
   .btn-post:hover { background: var(--accent2); transform: translateY(-1px); }
   .btn-post:active { transform: translateY(0); }
 
-  .feed-wrapper {
-    max-width: 620px;
-    margin: 0 auto;
-    padding: 0 20px 60px;
-  }
+  .feed-wrapper { max-width: 620px; margin: 0 auto; padding: 0 20px 60px; }
 
   .feed-header {
     display: flex;
@@ -218,15 +195,7 @@
     justify-content: space-between;
     margin-bottom: 24px;
   }
-
-  .feed-title {
-    font-size: 12px;
-    text-transform: uppercase;
-    letter-spacing: 2px;
-    color: var(--muted);
-    font-weight: 600;
-  }
-
+  .feed-title { font-size: 12px; text-transform: uppercase; letter-spacing: 2px; color: var(--muted); font-weight: 600; }
   .count-badge {
     background: var(--tag-bg);
     color: var(--accent);
@@ -249,12 +218,10 @@
     transition: border-color 0.25s, transform 0.25s, box-shadow 0.25s;
     animation: fadeUp 0.4s ease both;
   }
-
   @keyframes fadeUp {
     from { opacity: 0; transform: translateY(18px); }
-    to { opacity: 1; transform: translateY(0); }
+    to   { opacity: 1; transform: translateY(0); }
   }
-
   .card:hover {
     border-color: rgba(232,197,71,0.35);
     transform: translateY(-3px);
@@ -267,14 +234,11 @@
     background: var(--tag-bg);
     border: 1px solid rgba(232,197,71,0.2);
     border-radius: 12px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    display: flex; align-items: center; justify-content: center;
     font-size: 22px;
   }
 
   .card-body { flex: 1; min-width: 0; }
-
   .card-body h3 {
     font-family: 'Playfair Display', serif;
     font-size: 18px;
@@ -283,7 +247,6 @@
     margin-bottom: 8px;
     color: var(--text);
   }
-
   .card-body p {
     font-size: 14px;
     color: var(--muted);
@@ -296,17 +259,13 @@
   }
 
   .card-footer {
-    display: flex;
-    align-items: center;
+    display: flex; align-items: center;
     justify-content: space-between;
-    gap: 12px;
-    flex-wrap: wrap;
+    gap: 12px; flex-wrap: wrap;
   }
 
   .open-btn {
-    display: inline-flex;
-    align-items: center;
-    gap: 8px;
+    display: inline-flex; align-items: center; gap: 8px;
     padding: 9px 18px;
     background: var(--accent);
     color: #0d0d0f;
@@ -318,7 +277,6 @@
     font-family: 'DM Sans', sans-serif;
   }
   .open-btn:hover { background: var(--accent2); transform: scale(1.03); }
-
   .open-btn svg { width: 14px; height: 14px; }
 
   .url-label {
@@ -331,14 +289,26 @@
     font-family: monospace;
   }
 
-  .empty {
-    text-align: center;
-    padding: 80px 20px;
-    color: var(--muted);
+  /* DELETE BTN - admin only */
+  .delete-btn {
+    background: transparent;
+    border: 1px solid #ff5555;
+    color: #ff5555;
+    padding: 6px 12px;
+    border-radius: 8px;
+    font-size: 12px;
+    font-family: 'DM Sans', sans-serif;
+    cursor: pointer;
+    transition: all 0.2s;
   }
+  .delete-btn:hover { background: #ff5555; color: white; }
+
+  .empty { text-align: center; padding: 80px 20px; color: var(--muted); }
   .empty-icon { font-size: 48px; margin-bottom: 16px; }
   .empty h3 { font-family: 'Playfair Display', serif; font-size: 20px; color: var(--text); margin-bottom: 8px; }
   .empty p { font-size: 14px; }
+
+  .loading { text-align: center; padding: 60px; color: var(--muted); font-size: 14px; }
 </style>
 </head>
 <body>
@@ -371,73 +341,110 @@
 <div class="feed-wrapper">
   <div class="feed-header">
     <span class="feed-title">Latest Episodes</span>
-    <span class="count-badge" id="countBadge">0 posts</span>
+    <span class="count-badge" id="countBadge">Loading…</span>
   </div>
-  <div id="feed"></div>
+  <div id="feed"><div class="loading">⏳ Loading podcasts…</div></div>
 </div>
 
 <script type="module">
 import { initializeApp } from "https://www.gstatic.com/firebasejs/10.7.1/firebase-app.js";
 import { getAuth, onAuthStateChanged, signOut }
   from "https://www.gstatic.com/firebasejs/10.7.1/firebase-auth.js";
+import {
+  getFirestore,
+  collection,
+  addDoc,
+  deleteDoc,
+  doc,
+  onSnapshot,
+  orderBy,
+  query,
+  serverTimestamp
+} from "https://www.gstatic.com/firebasejs/10.7.1/firebase-firestore.js";
 
 const firebaseConfig = {
   apiKey: "AIzaSyCRcmNB91AUXeMBmfZ8LRE_aHyVtkGlrGE",
   authDomain: "login-app-a8543.firebaseapp.com",
   projectId: "login-app-a8543",
+  storageBucket: "login-app-a8543.firebasestorage.app",
+  messagingSenderId: "218636859286",
   appId: "1:218636859286:web:dac8962d65040f76a88fb7"
 };
 
-const app = initializeApp(firebaseConfig);
+const app  = initializeApp(firebaseConfig);
 const auth = getAuth(app);
+const db   = getFirestore(app);
 
+const ADMIN = "jacobwilsonp27@gmail.com";
+let isAdmin = false;
+
+// ── Auth ──────────────────────────────────────────────
 onAuthStateChanged(auth, (user) => {
   if (!user) { window.location.href = "index.html"; return; }
+
   document.getElementById("user").innerText = user.email;
-  if (user.email === "jacobwilsonp27@gmail.com") {
-    document.getElementById("adminBox").style.display = "block";
-  }
-  loadPodcasts();
+
+  isAdmin = user.email === ADMIN;
+  if (isAdmin) document.getElementById("adminBox").style.display = "block";
+
+  // 🔥 REAL-TIME LISTENER — updates instantly for ALL users worldwide
+  const q = query(collection(db, "podcasts"), orderBy("createdAt", "desc"));
+  onSnapshot(q, (snapshot) => {
+    renderPodcasts(snapshot.docs);
+  });
 });
 
+// ── Logout ────────────────────────────────────────────
 window.logout = function () {
   signOut(auth).then(() => { window.location.href = "index.html"; });
 };
 
-window.addPodcast = function () {
-  const user = auth.currentUser;
-  if (!user || user.email !== "jacobwilsonp27@gmail.com") {
-    alert("❌ Only admin can add podcasts");
-    return;
-  }
+// ── Add Podcast (Admin only) ──────────────────────────
+window.addPodcast = async function () {
+  if (!isAdmin) { alert("❌ Admins only"); return; }
+
   const title = document.getElementById("title").value.trim();
   const desc  = document.getElementById("desc").value.trim();
   const audio = document.getElementById("audio").value.trim();
+
   if (!title || !audio) { alert("Please fill in title and URL."); return; }
 
-  let podcasts = JSON.parse(localStorage.getItem("podcasts")) || [];
-  podcasts.unshift({ title, desc, audio });
-  localStorage.setItem("podcasts", JSON.stringify(podcasts));
-  loadPodcasts();
+  // ✅ Saves to Firestore — visible to ALL users instantly
+  await addDoc(collection(db, "podcasts"), {
+    title,
+    desc,
+    audio,
+    createdAt: serverTimestamp()
+  });
 
   document.getElementById("title").value = "";
-  document.getElementById("desc").value = "";
+  document.getElementById("desc").value  = "";
   document.getElementById("audio").value = "";
 };
 
+// ── Delete Podcast (Admin only) ───────────────────────
+window.deletePodcast = async function (id) {
+  if (!isAdmin) return;
+  if (!confirm("Delete this podcast?")) return;
+  await deleteDoc(doc(db, "podcasts", id));
+};
+
+// ── Render ────────────────────────────────────────────
 function getHostname(url) {
   try { return new URL(url).hostname.replace("www.", ""); }
   catch { return url; }
 }
 
-function loadPodcasts() {
+const icons = ["🎧","🎙","📻","🎵","🎤","📡"];
+
+function renderPodcasts(docs) {
   const feed = document.getElementById("feed");
-  const podcasts = JSON.parse(localStorage.getItem("podcasts")) || [];
+  const count = docs.length;
 
   document.getElementById("countBadge").textContent =
-    podcasts.length === 1 ? "1 post" : `${podcasts.length} posts`;
+    count === 1 ? "1 post" : `${count} posts`;
 
-  if (podcasts.length === 0) {
+  if (count === 0) {
     feed.innerHTML = `
       <div class="empty">
         <div class="empty-icon">🎙</div>
@@ -447,28 +454,30 @@ function loadPodcasts() {
     return;
   }
 
-  const icons = ["🎧","🎙","📻","🎵","🎤","📡"];
-
-  feed.innerHTML = podcasts.map((p, i) => `
-    <div class="card" style="animation-delay:${i * 0.07}s">
-      <div class="card-icon">${icons[i % icons.length]}</div>
-      <div class="card-body">
-        <h3>${p.title}</h3>
-        ${p.desc ? `<p>${p.desc}</p>` : ""}
-        <div class="card-footer">
-          <a href="${p.audio}" target="_blank" rel="noopener" class="open-btn">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
-              <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/>
-              <polyline points="15 3 21 3 21 9"/>
-              <line x1="10" y1="14" x2="21" y2="3"/>
-            </svg>
-            Listen Now
-          </a>
-          <span class="url-label">${getHostname(p.audio)}</span>
+  feed.innerHTML = docs.map((d, i) => {
+    const p = d.data();
+    return `
+      <div class="card" style="animation-delay:${i * 0.07}s">
+        <div class="card-icon">${icons[i % icons.length]}</div>
+        <div class="card-body">
+          <h3>${p.title}</h3>
+          ${p.desc ? `<p>${p.desc}</p>` : ""}
+          <div class="card-footer">
+            <a href="${p.audio}" target="_blank" rel="noopener" class="open-btn">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"
+                   stroke-linecap="round" stroke-linejoin="round">
+                <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/>
+                <polyline points="15 3 21 3 21 9"/>
+                <line x1="10" y1="14" x2="21" y2="3"/>
+              </svg>
+              Listen Now
+            </a>
+            <span class="url-label">${getHostname(p.audio)}</span>
+            ${isAdmin ? `<button class="delete-btn" onclick="deletePodcast('${d.id}')">🗑 Delete</button>` : ""}
+          </div>
         </div>
-      </div>
-    </div>
-  `).join("");
+      </div>`;
+  }).join("");
 }
 </script>
 </body>

@@ -32,210 +32,180 @@
       radial-gradient(ellipse at 85% 80%, rgba(240,165,0,0.05) 0%, transparent 55%);
   }
 
-  .wrapper {
-    width: 100%;
-    max-width: 420px;
-  }
+  .wrapper { width: 100%; max-width: 420px; }
 
-  /* LOGO */
-  .logo {
-    text-align: center;
-    margin-bottom: 32px;
-  }
+  .logo { text-align: center; margin-bottom: 32px; }
   .logo-text {
     font-family: 'Playfair Display', serif;
-    font-size: 28px;
-    font-weight: 900;
-    color: var(--text);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 10px;
+    font-size: 28px; font-weight: 900; color: var(--text);
+    display: flex; align-items: center; justify-content: center; gap: 10px;
   }
   .logo-badge {
-    background: var(--accent);
-    color: #0d0d0f;
-    font-family: 'DM Sans', sans-serif;
-    font-size: 11px;
-    font-weight: 700;
-    padding: 2px 8px;
-    border-radius: 4px;
-    letter-spacing: 1px;
-    text-transform: uppercase;
+    background: var(--accent); color: #0d0d0f;
+    font-family: 'DM Sans', sans-serif; font-size: 11px; font-weight: 700;
+    padding: 2px 8px; border-radius: 4px; letter-spacing: 1px; text-transform: uppercase;
   }
-  .logo-sub {
-    color: var(--muted);
-    font-size: 14px;
-    margin-top: 6px;
-    font-weight: 300;
-  }
+  .logo-sub { color: var(--muted); font-size: 14px; margin-top: 6px; font-weight: 300; }
 
-  /* CARD */
   .card {
-    background: var(--card);
-    border: 1px solid var(--border);
-    border-radius: 20px;
-    padding: 36px 32px;
-    position: relative;
-    overflow: hidden;
+    background: var(--card); border: 1px solid var(--border);
+    border-radius: 20px; padding: 36px 32px;
+    position: relative; overflow: hidden;
     box-shadow: 0 24px 60px rgba(0,0,0,0.5);
   }
-
   .card::before {
-    content: '';
-    position: absolute;
-    top: 0; left: 0; right: 0;
-    height: 3px;
+    content: ''; position: absolute; top: 0; left: 0; right: 0; height: 3px;
     background: linear-gradient(90deg, var(--accent), var(--accent2));
   }
 
-  .form-title {
-    font-family: 'Playfair Display', serif;
-    font-size: 24px;
-    font-weight: 700;
-    color: var(--text);
-    margin-bottom: 6px;
-  }
+  .form-title { font-family: 'Playfair Display', serif; font-size: 24px; font-weight: 700; color: var(--text); margin-bottom: 6px; }
+  .form-sub { font-size: 13px; color: var(--muted); margin-bottom: 28px; }
 
-  .form-sub {
-    font-size: 13px;
-    color: var(--muted);
-    margin-bottom: 28px;
-  }
-
-  /* FIELDS */
-  .field {
-    margin-bottom: 16px;
-  }
-
-  .field label {
-    display: block;
-    font-size: 12px;
-    font-weight: 600;
-    text-transform: uppercase;
-    letter-spacing: 1px;
-    color: var(--muted);
-    margin-bottom: 8px;
-  }
-
-  .field-wrap {
-    position: relative;
-  }
-
+  .field { margin-bottom: 16px; }
+  .field label { display: block; font-size: 12px; font-weight: 600; text-transform: uppercase; letter-spacing: 1px; color: var(--muted); margin-bottom: 8px; }
+  .field-wrap { position: relative; }
   .field-wrap input {
-    width: 100%;
-    background: var(--surface);
-    border: 1px solid var(--border);
-    border-radius: 10px;
-    padding: 13px 16px;
-    color: var(--text);
-    font-family: 'DM Sans', sans-serif;
-    font-size: 14px;
-    outline: none;
+    width: 100%; background: var(--surface); border: 1px solid var(--border);
+    border-radius: 10px; padding: 13px 16px; color: var(--text);
+    font-family: 'DM Sans', sans-serif; font-size: 14px; outline: none;
     transition: border-color 0.2s, box-shadow 0.2s;
   }
-
   .field-wrap input::placeholder { color: #555566; }
-
-  .field-wrap input:focus {
-    border-color: var(--accent);
-    box-shadow: 0 0 0 3px rgba(232,197,71,0.1);
-  }
+  .field-wrap input:focus { border-color: var(--accent); box-shadow: 0 0 0 3px rgba(232,197,71,0.1); }
 
   .toggle-eye {
-    position: absolute;
-    right: 14px;
-    top: 50%;
-    transform: translateY(-50%);
-    cursor: pointer;
-    font-size: 16px;
-    user-select: none;
-    color: var(--muted);
+    position: absolute; right: 14px; top: 50%; transform: translateY(-50%);
+    cursor: pointer; font-size: 16px; user-select: none; color: var(--muted);
   }
 
-  /* BUTTON */
   .btn {
-    width: 100%;
-    padding: 14px;
-    background: var(--accent);
-    color: #0d0d0f;
-    border: none;
-    border-radius: 10px;
-    font-family: 'DM Sans', sans-serif;
-    font-size: 15px;
-    font-weight: 700;
-    cursor: pointer;
-    margin-top: 8px;
-    transition: all 0.2s;
-    letter-spacing: 0.3px;
+    width: 100%; padding: 14px; background: var(--accent); color: #0d0d0f;
+    border: none; border-radius: 10px; font-family: 'DM Sans', sans-serif;
+    font-size: 15px; font-weight: 700; cursor: pointer; margin-top: 8px;
+    transition: all 0.2s; letter-spacing: 0.3px;
   }
   .btn:hover { background: var(--accent2); transform: translateY(-1px); box-shadow: 0 6px 20px rgba(232,197,71,0.25); }
   .btn:active { transform: translateY(0); }
 
-  /* SWITCH LINK */
-  .switch-text {
-    text-align: center;
-    margin-top: 22px;
-    font-size: 13px;
-    color: var(--muted);
-  }
-
-  .switch-text span {
-    color: var(--accent);
-    cursor: pointer;
-    font-weight: 600;
-    transition: color 0.2s;
-  }
+  .switch-text { text-align: center; margin-top: 22px; font-size: 13px; color: var(--muted); }
+  .switch-text span { color: var(--accent); cursor: pointer; font-weight: 600; transition: color 0.2s; }
   .switch-text span:hover { color: var(--accent2); }
 
-  /* DIVIDER */
-  .divider {
-    display: flex;
-    align-items: center;
-    gap: 12px;
-    margin: 20px 0;
-  }
-  .divider::before, .divider::after {
-    content: '';
-    flex: 1;
-    height: 1px;
-    background: var(--border);
-  }
-  .divider span {
-    font-size: 12px;
-    color: var(--muted);
-    white-space: nowrap;
-  }
-
-  /* TOAST */
   .toast {
-    position: fixed;
-    bottom: 24px;
-    left: 50%;
+    position: fixed; bottom: 24px; left: 50%;
     transform: translateX(-50%) translateY(80px);
-    background: var(--card);
-    border: 1px solid var(--border);
-    border-radius: 10px;
-    padding: 12px 20px;
-    font-size: 14px;
-    color: var(--text);
+    background: var(--card); border: 1px solid var(--border);
+    border-radius: 10px; padding: 12px 20px; font-size: 14px; color: var(--text);
     box-shadow: 0 8px 24px rgba(0,0,0,0.4);
     transition: transform 0.35s cubic-bezier(0.34,1.56,0.64,1);
-    z-index: 999;
-    display: flex;
-    align-items: center;
-    gap: 10px;
-    white-space: nowrap;
+    z-index: 999; display: flex; align-items: center; gap: 10px; white-space: nowrap;
   }
   .toast.show { transform: translateX(-50%) translateY(0); }
   .toast.success { border-color: #4caf8a; }
   .toast.error { border-color: #ff5555; }
 
-  /* FADE ANIMATION */
   .form-panel { animation: fadeIn 0.3s ease; }
   @keyframes fadeIn {
     from { opacity: 0; transform: translateY(10px); }
     to   { opacity: 1; transform: translateY(0); }
+  }
+
+  /* ── OFFLINE SCREEN ─────────────────────────────── */
+  #offlineScreen {
+    display: none;
+    text-align: center;
+    animation: fadeIn 0.4s ease;
+  }
+
+  .offline-icon {
+    font-size: 64px;
+    margin-bottom: 20px;
+    display: block;
+    animation: pulse 2s infinite;
+  }
+
+  @keyframes pulse {
+    0%, 100% { opacity: 1; transform: scale(1); }
+    50%       { opacity: 0.6; transform: scale(0.95); }
+  }
+
+  .offline-card {
+    background: var(--card);
+    border: 1px solid #ff555533;
+    border-radius: 20px;
+    padding: 40px 32px;
+    position: relative;
+    overflow: hidden;
+    box-shadow: 0 24px 60px rgba(0,0,0,0.5);
+  }
+
+  .offline-card::before {
+    content: '';
+    position: absolute; top: 0; left: 0; right: 0; height: 3px;
+    background: linear-gradient(90deg, #ff5555, #ff8c00);
+  }
+
+  .offline-title {
+    font-family: 'Playfair Display', serif;
+    font-size: 24px; font-weight: 700;
+    color: var(--text); margin-bottom: 10px;
+  }
+
+  .offline-sub {
+    font-size: 14px; color: var(--muted);
+    line-height: 1.7; margin-bottom: 28px;
+  }
+
+  .offline-steps {
+    text-align: left;
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: 12px;
+    padding: 16px 20px;
+    margin-bottom: 24px;
+    font-size: 13px;
+    color: var(--muted);
+    line-height: 2;
+  }
+
+  .offline-steps span {
+    color: var(--accent);
+    font-weight: 600;
+    margin-right: 8px;
+  }
+
+  .btn-retry {
+    width: 100%; padding: 14px;
+    background: transparent;
+    border: 1px solid var(--accent);
+    color: var(--accent);
+    border-radius: 10px;
+    font-family: 'DM Sans', sans-serif;
+    font-size: 15px; font-weight: 700;
+    cursor: pointer; transition: all 0.2s;
+  }
+  .btn-retry:hover {
+    background: var(--accent); color: #0d0d0f;
+    transform: translateY(-1px);
+    box-shadow: 0 6px 20px rgba(232,197,71,0.25);
+  }
+
+  /* status dot in navbar-style pill */
+  .status-pill {
+    display: inline-flex; align-items: center; gap: 8px;
+    background: var(--surface); border: 1px solid #ff555544;
+    border-radius: 100px; padding: 5px 14px;
+    font-size: 12px; color: #ff7777;
+    margin-bottom: 24px; font-weight: 500;
+  }
+  .status-dot {
+    width: 8px; height: 8px; border-radius: 50%;
+    background: #ff5555;
+    animation: blink 1.2s infinite;
+  }
+  @keyframes blink {
+    0%, 100% { opacity: 1; }
+    50%       { opacity: 0.2; }
   }
 </style>
 </head>
@@ -243,70 +213,85 @@
 
 <div class="wrapper">
 
-  <!-- LOGO -->
+  <!-- LOGO (always visible) -->
   <div class="logo">
     <div class="logo-text">🎙 PodFeed <span class="logo-badge">Beta</span></div>
     <div class="logo-sub">Your curated podcast destination</div>
   </div>
 
-  <!-- CARD -->
-  <div class="card">
-
-    <!-- LOGIN -->
-    <div id="loginForm" class="form-panel">
-      <div class="form-title">Welcome back</div>
-      <div class="form-sub">Sign in to access your feed</div>
-
-      <div class="field">
-        <label>Email</label>
-        <div class="field-wrap">
-          <input type="email" id="loginEmail" placeholder="you@example.com">
-        </div>
+  <!-- ── OFFLINE SCREEN ── -->
+  <div id="offlineScreen">
+    <div class="offline-card">
+      <div class="status-pill">
+        <span class="status-dot"></span> No Internet Connection
       </div>
-
-      <div class="field">
-        <label>Password</label>
-        <div class="field-wrap">
-          <input type="password" id="loginPassword" placeholder="••••••••">
-          <span class="toggle-eye" onclick="togglePassword('loginPassword', this)">👁️</span>
-        </div>
+      <span class="offline-icon">📡</span>
+      <div class="offline-title">You're offline</div>
+      <div class="offline-sub">
+        PodFeed needs an internet connection to sign you in and load your podcast feed.
       </div>
-
-      <button class="btn" onclick="login()">Sign In →</button>
-
-      <div class="switch-text">
-        No account? <span onclick="showSignup()">Create one free</span>
+      <div class="offline-steps">
+        <div><span>1.</span> Check your Wi-Fi or mobile data</div>
+        <div><span>2.</span> Reconnect to the internet</div>
+        <div><span>3.</span> Press "Try Again" below</div>
       </div>
+      <button class="btn-retry" onclick="retryConnection()">🔄 Try Again</button>
     </div>
-
-    <!-- SIGNUP -->
-    <div id="signupForm" class="form-panel" style="display:none;">
-      <div class="form-title">Create account</div>
-      <div class="form-sub">Join PodFeed and start listening</div>
-
-      <div class="field">
-        <label>Email</label>
-        <div class="field-wrap">
-          <input type="email" id="signupEmail" placeholder="you@example.com">
-        </div>
-      </div>
-
-      <div class="field">
-        <label>Password</label>
-        <div class="field-wrap">
-          <input type="password" id="signupPassword" placeholder="Min. 6 characters">
-          <span class="toggle-eye" onclick="togglePassword('signupPassword', this)">👁️</span>
-        </div>
-      </div>
-
-      <button class="btn" onclick="signup()">Create Account →</button>
-
-      <div class="switch-text">
-        Already have an account? <span onclick="showLogin()">Sign in</span>
-      </div>
-    </div>
-
   </div>
+
+  <!-- ── LOGIN / SIGNUP CARD ── -->
+  <div id="authScreen">
+    <div class="card">
+
+      <!-- LOGIN -->
+      <div id="loginForm" class="form-panel">
+        <div class="form-title">Welcome back</div>
+        <div class="form-sub">Sign in to access your feed</div>
+        <div class="field">
+          <label>Email</label>
+          <div class="field-wrap">
+            <input type="email" id="loginEmail" placeholder="you@example.com">
+          </div>
+        </div>
+        <div class="field">
+          <label>Password</label>
+          <div class="field-wrap">
+            <input type="password" id="loginPassword" placeholder="••••••••">
+            <span class="toggle-eye" onclick="togglePassword('loginPassword', this)">👁️</span>
+          </div>
+        </div>
+        <button class="btn" onclick="login()">Sign In →</button>
+        <div class="switch-text">
+          No account? <span onclick="showSignup()">Create one free</span>
+        </div>
+      </div>
+
+      <!-- SIGNUP -->
+      <div id="signupForm" class="form-panel" style="display:none;">
+        <div class="form-title">Create account</div>
+        <div class="form-sub">Join PodFeed and start listening</div>
+        <div class="field">
+          <label>Email</label>
+          <div class="field-wrap">
+            <input type="email" id="signupEmail" placeholder="you@example.com">
+          </div>
+        </div>
+        <div class="field">
+          <label>Password</label>
+          <div class="field-wrap">
+            <input type="password" id="signupPassword" placeholder="Min. 6 characters">
+            <span class="toggle-eye" onclick="togglePassword('signupPassword', this)">👁️</span>
+          </div>
+        </div>
+        <button class="btn" onclick="signup()">Create Account →</button>
+        <div class="switch-text">
+          Already have an account? <span onclick="showLogin()">Sign in</span>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
 </div>
 
 <!-- TOAST -->
@@ -317,8 +302,7 @@ import { initializeApp } from "https://www.gstatic.com/firebasejs/10.7.1/firebas
 import {
   getAuth,
   createUserWithEmailAndPassword,
-  signInWithEmailAndPassword,
-  sendEmailVerification
+  signInWithEmailAndPassword
 } from "https://www.gstatic.com/firebasejs/10.7.1/firebase-auth.js";
 
 const firebaseConfig = {
@@ -331,10 +315,36 @@ const firebaseConfig = {
   measurementId: "G-B0VNEH4HFJ"
 };
 
-const app = initializeApp(firebaseConfig);
+const app  = initializeApp(firebaseConfig);
 const auth = getAuth(app);
 
-// TOAST
+// ── ONLINE / OFFLINE DETECTION ────────────────────────
+function checkNetwork() {
+  if (navigator.onLine) {
+    document.getElementById("offlineScreen").style.display = "none";
+    document.getElementById("authScreen").style.display   = "block";
+  } else {
+    document.getElementById("offlineScreen").style.display = "block";
+    document.getElementById("authScreen").style.display   = "none";
+  }
+}
+
+// Run on load
+checkNetwork();
+
+// Listen for network changes in real time
+window.addEventListener("online",  checkNetwork);
+window.addEventListener("offline", checkNetwork);
+
+// Retry button
+window.retryConnection = function () {
+  checkNetwork();
+  if (!navigator.onLine) {
+    showToast("Still offline. Check your connection.", "error");
+  }
+};
+
+// ── TOAST ─────────────────────────────────────────────
 function showToast(msg, type = "success") {
   const t = document.getElementById("toast");
   t.textContent = (type === "success" ? "✅ " : "❌ ") + msg;
@@ -342,9 +352,9 @@ function showToast(msg, type = "success") {
   setTimeout(() => { t.className = "toast"; }, 3500);
 }
 
-// TOGGLE FORMS
+// ── TOGGLE FORMS ──────────────────────────────────────
 window.showSignup = function () {
-  document.getElementById("loginForm").style.display = "none";
+  document.getElementById("loginForm").style.display  = "none";
   document.getElementById("signupForm").style.display = "block";
   document.getElementById("signupForm").classList.remove("form-panel");
   void document.getElementById("signupForm").offsetWidth;
@@ -353,45 +363,40 @@ window.showSignup = function () {
 
 window.showLogin = function () {
   document.getElementById("signupForm").style.display = "none";
-  document.getElementById("loginForm").style.display = "block";
+  document.getElementById("loginForm").style.display  = "block";
   document.getElementById("loginForm").classList.remove("form-panel");
   void document.getElementById("loginForm").offsetWidth;
   document.getElementById("loginForm").classList.add("form-panel");
 };
 
-// TOGGLE PASSWORD
+// ── TOGGLE PASSWORD ───────────────────────────────────
 window.togglePassword = function (fieldId, icon) {
   const field = document.getElementById(fieldId);
-  if (field.type === "password") {
-    field.type = "text";
-    icon.textContent = "🙈";
-  } else {
-    field.type = "password";
-    icon.textContent = "👁️";
-  }
+  if (field.type === "password") { field.type = "text"; icon.textContent = "🙈"; }
+  else                           { field.type = "password"; icon.textContent = "👁️"; }
 };
 
-// SIGNUP
+// ── SIGNUP ────────────────────────────────────────────
 window.signup = function () {
   const email    = document.getElementById("signupEmail").value;
   const password = document.getElementById("signupPassword").value;
-
   createUserWithEmailAndPassword(auth, email, password)
-    .then((uc) => {
+    .then(() => {
       showToast("Account created! Redirecting…", "success");
       setTimeout(() => { window.location.href = "dashboard.html"; }, 1200);
     })
     .catch((e) => showToast(e.message, "error"));
 };
-// LOGIN
+
+// ── LOGIN ─────────────────────────────────────────────
 window.login = function () {
   const email    = document.getElementById("loginEmail").value;
   const password = document.getElementById("loginPassword").value;
   signInWithEmailAndPassword(auth, email, password)
-    .then((uc) => {
-  showToast("Login successful! Redirecting…", "success");
-  setTimeout(() => { window.location.href = "dashboard.html"; }, 1200);
-})
+    .then(() => {
+      showToast("Login successful! Redirecting…", "success");
+      setTimeout(() => { window.location.href = "dashboard.html"; }, 1200);
+    })
     .catch((e) => {
       if (e.code === "auth/user-not-found") showToast("User not found. Please sign up.", "error");
       else if (e.code === "auth/wrong-password") showToast("Wrong password.", "error");
